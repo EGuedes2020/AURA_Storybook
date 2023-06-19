@@ -1,0 +1,104 @@
+{/* Introduction.mdx */}
+
+import { Meta } from '@storybook/addon-docs';
+import { Typeset, ColorPalette, ColorItem } from '@storybook/blocks';
+
+import Logo from "../components/Logo";
+
+<Meta title="Welcome" />
+
+<style>
+  {`
+    .subheading {
+      --mediumdark: '#999999';
+      font-weight: 900;
+      font-size: 13px;
+      color: #999;
+      letter-spacing: 6px;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      margin-top: 40px;
+    }
+
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td, th {
+      border: 1px solid #023047;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #023047;
+    }
+
+  `}
+</style>
+
+
+
+# Bem-vindo ao storybook da
+<Logo />
+\
+\
+Poderá guiar-se pela seguinte tabela tendo em conta o que pretende:
+
+<table>
+  <tr>
+    <th>Categorias</th>
+    <th>Descrição</th>
+  </tr>
+  <tr>
+    <td>Design Tokens</td>
+    <td>Ver o nome das variáveis associadas às cores, tipografias, spacing, <i>etc</i>.</td>
+  </tr>
+  <tr>
+    <td>Components</td>
+    <td>Ver a documentação e interagir com as componentes.</td>
+  </tr>
+  <tr>
+    <td>Components > <b>Atoms</b></td>
+    <td>Interagir com componentes simples, exemplo: botão, input, label, chip.</td>
+  </tr>
+  <tr>
+    <td>Components > <b>Mulecules</b></td>
+    <td>Interagir com componentes simples juntos que criam uma molécula, exemplo: search bar, reactions to posts.</td>
+  </tr>
+  <tr>
+    <td>Components > <b>Organisms</b></td>
+    <td>Interagir com combinações de organismos, exemplo: cards, bottom navigation</td>
+  </tr>
+  <tr>
+    <td>Components > <b>Templates</b></td>
+    <td>Interagir com o layout da página.</td>
+  </tr>
+  <tr>
+    <td>Components > <b>Pages</b></td>
+    <td>Interagir com o produto final que é a página.</td>
+  </tr>
+</table>
+
+<div className="subheading">Programador</div>
+Os tokens foram criados de forma a automatizar, na eventualidade de toda a paleta de cores da aplicação mudar ou outros aspectos importantes do design system, a mudança das mesmas pelas componentes.  
+
+Caso pretenta mudar, por exemplo, uma das cores da paleta de cores, deverá ir à pasta **styles** e editar o ficheiro **DesignSytem.js**.
+Nesse ficheiro encontrará todos os objectos ou styled-components com estes tokens e respetivos valores.  
+
+Assim, estes valores serão automaticamente atualizados nas componentes, sendo que estas vão buscar as variáveis a esse ficheiro.
+
+<div className="subheading">Designer</div>
+Poderá interagir com os componentes presentes na pasta dos componentes.
+A mesma está dividida em **Atoms**, **Molecules**, **Organisms**, **Templates** and **Pages**. 
+Para entender melhor esta divisão, prossiga para o seguinte [link](https://bradfrost.com/blog/post/atomic-web-design/).
+
+Não precisará de escrever o hex das cores, apenas utilizar os tokens presentes na secção **Design Tokens**.
+Isso também se aplica a outros tokens, como de icons, thypography, spacing, *etc*.
+
+Tem ACESSIBILIDADE em mente! 
+\
+A addon da a11y ajudar-te-á nesse quesito.

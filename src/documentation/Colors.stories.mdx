@@ -1,0 +1,47 @@
+{/* Colors.mdx */}
+
+import { color } from '../styles/DesignSystem.js';
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+
+<Meta title="Design Tokens/Colors" />
+
+<style>
+  {`
+    .padding{
+      margin-top: 40px;
+    }
+
+  `}
+</style>
+
+
+# Colors
+
+Esta é a paleta de cores da aplicação. As palavras de baixo de cada cor (ex: *"mint_vivid"*, *"danger"*, *"blue_dark"*), são as **strings** que deverão ser utilizadas para testar as cores.   
+
+Elas estão normalmente presentes como **"presetColors"** no *color picker* para facilitar os testes. Caso haja uma anormalidade, utilize as **strings** referidas.  
+
+<div className="padding">
+  <ColorPalette>
+    <ColorItem
+      title="Escala de azuis"
+      subtitle="Utilizados em fundos, cards, links e botões(texto e/ou ícones). O blue_light é só para elementos de texto."
+      colors={{ blue_dark: `${color.blue_dark}`, blue_mid: `${color.blue_mid}`, blue_vivid: `${color.blue_vivid}`, blue_light: `${color.blue_light}` }}
+    />
+    <ColorItem 
+      title="Escala de cores menta" 
+      subtitle="Utilizados em botões, gráficos e ícones. O mint_vivid é apenas utilizado no ícone de notificação na bottom navigation." 
+      colors={{ mint_dark: `${color.mint_dark}`, mint_mid: `${color.mint_mid}`, mint_vivid: `${color.mint_vivid}`,}} 
+    />
+    <ColorItem 
+      title="Danger" 
+      subtitle="Utilizados botões com ações irreversíveis ou perigosas." 
+      colors={{ danger: `${color.danger}` }} 
+    />
+    <ColorItem 
+      title="Escala de cinzentos" 
+      subtitle="Utilizados nos elementos de texto, ícones e botões." 
+      colors={{ black: `${color.black}`, gray: `${color.gray}`, white: `${color.white}` }} 
+    />
+  </ColorPalette>
+</div>

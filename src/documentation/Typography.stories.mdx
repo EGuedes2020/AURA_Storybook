@@ -1,0 +1,270 @@
+{/* Typography.mdx */}
+
+import {
+  H1,
+  H2,
+  H3,
+  H4,
+  H5,
+  H6,
+  SUB1,
+  SUB2,
+  B1,
+  B2,
+  BTN_BIG_txt,
+  BTN_SM_txt,
+  CAP,
+  OL,
+  LINK,
+  NUM_BIG,
+  NUM_SM
+} from "../styles/DesignSystem.js";
+
+import { Meta, Typeset } from "@storybook/blocks";
+
+<Meta title="Design Tokens/Typography" />
+
+export const SampleText =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+
+<style>
+  {`
+
+    details {
+      margin-bottom: 20px;
+    }
+
+    details > summary {
+      padding: 0px;
+      border: none;
+      cursor: pointer;
+      list-style: none;
+      margin: 0px;
+      color: #131313;
+    }
+
+    details > p {
+      border-radius: 0 0 8px 8px;
+      background-color: #CCD6DA;
+      padding: 1px 16px;
+      margin: 0px;
+      border-top: 5px solid #023047;
+    }
+
+  `}
+</style>
+
+# Typography
+
+Na seguinte página, é possível ver exemplos de como devem ser utilizados os elementos textuais. 
+Para ver as **especificações** de cada um, em formato js, basta **clicar** nele.
+
+**Fonts:** _Readex Pro_ e _Inter_  
+**Weights:** 300 ( *light* ) , 400 ( *regular* ) , 500 ( *medium* ) , 600 ( *semiBold* ) , 700 ( *bold* ).
+
+<details>
+  <summary><H1>Headline 1</H1></summary>
+    <p>
+      <pre>
+        font-family: "Readex Pro";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 98px;
+        letter-spacing: -1.5px;
+      </pre>
+    </p>
+</details>
+<details>
+  <summary><H2>Headline 2</H2></summary>
+    <p>
+      <pre>
+        font-family: "Readex Pro";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 61px;
+        letter-spacing: -0.5px;
+      </pre>
+    </p>
+</details>
+<details>
+  <summary><H3>Headline 3</H3></summary>
+    <p>
+      <pre>
+        font-family: "Readex Pro";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 49px;
+      </pre>
+    </p>
+</details>
+<details>
+  <summary><H4>Headline 4</H4></summary>
+    <p>
+      <pre>
+        font-family: "Readex Pro";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        letter-spacing: 0.25px;
+      </pre>
+    </p>
+</details>
+<details>
+  <summary><H5>Headline 5</H5></summary>
+    <p>
+      <pre>
+        font-family: "Readex Pro";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        letter-spacing: 0.5px;
+      </pre>
+    </p>
+</details>
+<details>
+  <summary><H6>Headline 6</H6></summary>
+    <p>
+      <pre>
+        font-family: "Readex Pro";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 0.15px;
+      </pre>
+    </p>
+</details>
+<details>
+  <summary><SUB1>Subtitle 1</SUB1></summary>
+    <p>
+      <pre>
+        font-family: "Readex Pro";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.15px;
+      </pre>
+    </p>
+</details>
+<details>
+  <summary><SUB2>Subtitle 2</SUB2></summary>
+    <p>
+      <pre>
+        font-family: "Readex Pro";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.1px;
+      </pre>
+    </p>
+</details>
+<details>
+  <summary><B1>Body 1 - {SampleText}</B1></summary>
+    <p>
+      <pre>
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+      </pre>
+    </p>
+</details>
+<details>
+  <summary><B2>Body 2 - {SampleText}</B2></summary>
+    <p>
+      <pre>
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.1px;
+      </pre>
+    </p>
+</details>
+<details>
+  <summary><BTN_BIG_txt>Button Grande</BTN_BIG_txt></summary>
+    <p>
+      <pre>
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      </pre>
+    </p>
+</details>
+<details>
+  <summary><BTN_SM_txt>Button Pequeno e FAB</BTN_SM_txt></summary>
+    <p>
+      <pre>
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.25px;
+      </pre>
+    </p>
+</details>
+<details>
+  <summary><CAP>Caption</CAP></summary>
+    <p>
+      <pre>
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        letter-spacing: 0.4px;
+      </pre>
+    </p>
+</details>
+<details>
+  <summary><OL>Overline</OL></summary>
+    <p>
+      <pre>
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+      </pre>
+    </p>
+</details>
+<details>
+  <summary><LINK>Links e Conteúdo Destacado</LINK></summary>
+    <p>
+      <pre>
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.25px;
+        text-decoration-line: underline;
+
+        color: #036b9f;
+      </pre>
+    </p>
+</details>
+<details>
+  <summary><NUM_BIG>Números Grandes</NUM_BIG></summary>
+    <p>
+      <pre>
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+      </pre>
+    </p>
+</details>
+<details>
+  <summary><NUM_SM>Números Pequenos</NUM_SM></summary>
+    <p>
+      <pre>
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: 0.5px;
+      </pre>
+    </p>
+</details>
